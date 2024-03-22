@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #001e4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding-left: 3vw;
+    background-color: white;
+    margin: 6vh 5vw;
+    border-radius: 10px;
+    width: 60vw;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.quizHeading {
+    margin-top: 20px;
+    border-bottom: 5px solid rgb(255, 24, 24);
+    border-radius: 10px;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.quizHeading b {
+    color: rgb(255, 24, 24);
+    font-size: 40px;
+
+}
+
+.question {
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.options {
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option {
+    background-color: rgb(231, 228, 224);
+    border: 3px solid black;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 3vw;
+    border-radius: 10px;
+    padding: 3px 13px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.option p {
+    padding: 2px;
+    padding-left: 8px;
+}
+
+.btn button {
+    background-color: #001e4d;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 50px;
+    border-radius: 9px;
+    margin-right: 8vw;
+}
+
+.options :hover {
+    background-color: rgb(218, 213, 213);
+    cursor: pointer;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    background-color: #062860;
+}
+
+.selected:active {
+    color: red;
+    background-color: rgb(0, 0, 0);
+}
+
+.selected:hover {
+    color: red;
+    background-color: rgb(0, 0, 0);
+}
+
+.selected {
+    color: red;
+    background-color: rgb(0, 0, 0);
+}
+
+.submit button {
+    padding: 10px 40px;
+
+}
+
+.btns {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media(max-width: 630px) {
+    .btns {
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.incorrect {
+    background-color: rgb(184, 103, 103);
+    color: white;
+}
+
+.correct {
+    background-color: rgb(130, 166, 130);
+    color: white;
+}
+
+.disabled {
+    opacity: 0.65;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.request{
+    font-family:  Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(194, 12, 12);
+}
