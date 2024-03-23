@@ -121,7 +121,36 @@ body {
     width: 100%;
     margin-top: 20px;
 }
-
+@media(max-width: 700px) {
+    .btns {
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+    .container{
+        width: 100vw;
+        margin-top: 10px;
+    }
+    .option{
+        border: 2px solid black;
+        margin-right: 3vw;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 20px;
+        width: 70vw;
+        height: 20px;
+        font-size: 15px;
+    }
+    .btn button {
+        font-size: 15px;
+        padding: 6px 30px;
+    }
+    .question h4{
+        font-weight: 600;
+        font-size: 18px;
+        padding-right: 10px;
+    }
+}
 @media(max-width: 630px) {
     .btns {
         justify-content: center;
